@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+  <h2 class="mb-3">Update your interests</h2>
+  <form method="post" novalidate>
+      <div class= "container">
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="card-deck">
+          <!-- Card -->
+          <div class="card mb-4">
+           
+            <!--Card image-->
+            <a href='/students'>
+             <div class="view overlay">
+              <img class="card-img-top" src="{% static 'img/math2.jpg'  %}" alt="">
+              <a href="#">
+                <div class="mask rgba-white-slight">
+
+                </div>
+             </a>
+            </div>
+           </a>
+
+            <!--Card content-->
+            <div class="card-body">
+              
+            </div>
+           
+          </div>
+  
+          <div class="card mb-4">
+
+            <!--Card image-->
+            <a href='/students'>
+             <div class="view overlay">
+              <img class="card-img-top" src="{% static 'img/history1.jpg'  %}" alt="">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+            </a>
+            </div>
+            </a>
+
+            <!--Card content-->
+            <div class="card-body">
+
+            </div>
+          </div>
+
+          <div class="card mb-4">
+
+            <!--Card image-->
+            <a href='/students'>
+             <div class="view overlay">
+              <img class="card-img-top" src="{% static 'img/geography1.jpg'  %}" alt="">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+            </a>
+            </div>
+            </a>
+
+            <!--Card content-->
+            <div class="card-body">
+            </div>
+          </div>
+
+            <div class="card mb-4">
+              
+
+            <a href='/students'>
+             <div class="view overlay">
+              <img class="card-img-top" src="{% static 'img/literature.jpg'  %}" alt="">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+            </a>
+            </div>
+            </a> 
+
+            <!-- Card content -->
+            <div class="card-body">
+
+            </div>
+          </div>
+          <div class="card mb-4"> 
+
+            <!-- Card image -->
+            <a href='/students'>
+             <div class="view overlay">
+              <img class="card-img-top" src="{% static 'img/chemistry.jpg'  %}" alt="">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+            </a>
+            </div>
+            </a>
+
+            <!--Card content-->
+            <div class="card-body">
+
+            </div>
+          </div>
+          <div class="card mb-4"> 
+           
+
+            <!--Card image-->
+            <a href='/students'>
+             <div class="view overlay">
+              <img class="card-img-top" src="{% static 'img/physics1.jpg'  %}" alt="">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+            </a>
+            </div>
+            </a>
+
+            <!--Card content-->
+            <div class="card-body"> 
+
+            </div>
+           </div>
+          </div>  
+        </div>
+      </div>
+    {% csrf_token %}
+    {{ form|crispy }}       
+     <button type="submit" class="btn btn-success">Save changes</button>
+    <a href="{% url 'students:quiz_list' %}" class="btn btn-outline-secondary">Nevermind</a> -->
+  </form>
+ {% endblock %} 
