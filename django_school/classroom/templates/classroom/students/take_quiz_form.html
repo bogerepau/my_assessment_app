@@ -4,13 +4,33 @@
 
 {% block content %}
   <div class="progress mb-3">
-    <div class="progress-bar" role="progressbar" aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+    <div class="progress-bar" role="progressbar" aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100" style="width:{{ progress }}"></div>
   </div>
-  <h2 class="mb-3">{{ quiz.name }}</h2>
+  <p>30 minute count down.</p>
+  <button onclick="countDown()">Start</button>
+  <div id="status"></div>
+   <script>
+        function countDown() {
+        var secs = 1800;
+        var mins;
+        var element = document.getElementById('status');
+        
+        setInterval(function(){
+          mins = secs / 60;
+          element.innerHTML = "You have "+mins.toFixed(2)+" minutes";
+          if(secs < 1) {
+              element.innerHTML = '<h2>You have no time left!</h2>';
+          }  
+          secs--;
+        }, 1000)  
+  }
+ 
+</script>
+   <h2 class="mb-3">{{ quiz.name }}</h2>
   <p class="lead">{{ question.text }}</p>
   <form method="post" novalidate>
     {% csrf_token %}
     {{ form|crispy }}
     <button type="submit" class="btn btn-primary">Next →</button>
   </form>
-{% endblock %}
+{% endblock %} 
