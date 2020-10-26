@@ -20,7 +20,6 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: .5rem 1rem;
-  margin-left: 14rem;
 }
 
 
@@ -50,8 +49,8 @@ footer a {
 
 .btn-student {
   color: #fff;
-  background-color: #91afb6;
-  border-color: #91afb6;
+  background-color:#95B9C7;
+  border-color: #95B9C7;
 }
 
 .btn-student:hover,
@@ -82,3 +81,66 @@ footer a {
 .has-danger .invalid-feedback {
   display: block;
 }
+  
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(.25rem - 0px);
+  border-top-right-radius: calc(.25rem - 0px);  
+ }
+
+ img {
+  vertical-align: middle;
+  border-style: none;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 15px;
+
+  
+}
+.bg-light {
+  background-color: #fff!important;
+}
+.justify-content-center {
+  -webkit-box-pack: center!important;
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+  margin-top: 100px;
+}
+
+form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; 
+}
+.card {
+  position: relative;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #FEFCFF;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}  
+
