@@ -26,8 +26,8 @@ SECRET_KEY = 'd$pxg6fisc4iwzk&vz^s_d0lkf&k63l5a8f!obktw!jg#4zvp3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1','localhost'],
-ALLOWED_HOSTS = ['student-assessment-app1.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','student-assessment-app1.herokuapp.com']
+
                 
 
 

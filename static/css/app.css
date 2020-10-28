@@ -6,6 +6,16 @@
   color: #212529;
   text-decoration: none;
 }
+
+ #homepage {
+  background: url('https://cdn.editage.com/insights/editagecom/production/styles/detail_page_image/public/background_0.jpg?itok=ejYdfmkj');
+  background-repeat: no-repeat;
+  background-size: cover;
+    height: 50vh;
+    width: 100%;
+  
+} 
+
 .navbar {
   position: relative;
   display: -webkit-box;
@@ -100,9 +110,30 @@ h1 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   margin-bottom: 15px;
-
   
 }
+h2 {
+  font: 35px;
+  color:#FFF;
+  margin:0px,0px, 8px;
+}
+.h2, h2 {
+  font-size: 2.5rem;
+}
+.lead {
+  font-size: 1.75rem;
+  font-weight: 300;
+  font:25px;
+  margin:0px, 0px, 8px;
+  color: #FFF;
+}
+ 
+a {
+  color: #900C3F;
+  text-decoration: none;
+  background-color: transparent;
+} 
+
 .bg-light {
   background-color: #fff!important;
 }
@@ -143,4 +174,3 @@ form-control {
   border: 1px solid rgba(0,0,0,.125);
   border-radius: .25rem;
 }  
-
